@@ -58,7 +58,7 @@ jobs:
 #          passphrase: ${{ secrets.PASSPHRASE }}
           script: |
             sudo docker pull donskihalexey/yamdb_final
-#            cd /home/${{ secrets.USER }}/yamdb_final
+            cd /home/${{ secrets.USER }}/yamdb_final
             sudo docker-compose stop
             sudo docker-compose rm web
             sudo docker-compose up -d
