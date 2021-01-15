@@ -38,7 +38,7 @@ class UserCodeViewSet(CreateAPIView):
     @staticmethod
     def send_code(email, code):
         send_mail(
-            f'Код доступа для регистрации на ресурсе YaMDB',
+            f'{"Код доступа для регистрации на ресурсе YaMDB"}',
             f'{code}',
             EMAIL,
             [f'{email}'],
