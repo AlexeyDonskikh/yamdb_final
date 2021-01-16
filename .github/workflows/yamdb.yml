@@ -53,6 +53,8 @@ jobs:
           username: ${{ secrets.USER }}
           key: ${{ secrets.SSH_KEY }}
           script: |
+            cd ~
+            cd ./code
             sudo docker-compose down
             sudo docker-compose up --build -d
   send_message:
