@@ -54,10 +54,8 @@ jobs:
           key: ${{ secrets.SSH_KEY }}
           script: |
             sudo docker pull donskihalexey/yamdb_final
-            cd /home/${{ secrets.USER }}/app
-            docker-compose stop
-            docker rm web
-            docker-compose up -d
+            sudo docker stop $(sudo docker ps -a -q)
+            sudo docker-compose up --build -d
   send_message:
     runs-on: ubuntu-latest
     needs: deploy
