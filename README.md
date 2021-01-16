@@ -1,13 +1,11 @@
 # API YaMDB
 
-https://github.com/AlexeyDonskikh/yamdb_final/workflows/yamdb.yml/badge.svg
-
-![yamdb](https://github.com/actions/hello-world/workflows/Greet%20Everyone/badge.svg)
+![AppVeyor](https://img.shields.io/appveyor/build/AlexeyDonskikh/yamdb_final)
 
 REST API для сервиса YaMDb — базы отзывов о фильмах, книгах и музыке.
 Проект YaMDb собирает отзывы пользователей на произведения. Произведения делятся на категории: «Книги», «Фильмы», «Музыка».
 
-# Развёртывание проекта
+# Развёртывание проекта 
 Клонировать репозиторий
     
     git clone https://github.com/AlexeyDonskikh/yamdb_final.git
