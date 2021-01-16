@@ -14,7 +14,7 @@
         - ./.env
       restart: always
     web:
-      image: helenspring/yamdb:latest
+      image: donskihalexey/yamdb_final:latest
       restart: always
       volumes:
         - .:/code
