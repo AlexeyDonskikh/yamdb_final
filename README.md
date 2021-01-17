@@ -1,6 +1,6 @@
 # API YaMDB
 
-![yamdb](https://github.com/AlexeyDonskikh/yamdb_final/workflows/yamdb_workflow/badge.svg)
+![yamdb](https://github.com/AlexeyDonskikh/yamdb_final/workflows/yamdb/badge.svg)
 
 REST API для сервиса YaMDb — базы отзывов о фильмах, книгах и музыке.
 Проект YaMDb собирает отзывы пользователей на произведения. Произведения делятся на категории: «Книги», «Фильмы», «Музыка».
