@@ -42,6 +42,7 @@ jobs:
         with:
           push: true
           tags: donskihalexey/yamdb_final:latest
+
   deploy:
     runs-on: ubuntu-latest
     needs: build_and_push_to_docker_hub
@@ -53,8 +54,11 @@ jobs:
           username: ${{ secrets.USER }}
           key: ${{ secrets.SSH_KEY }}
           script: |
-            sudo docker stop $(sudo docker ps -a -q)
-            sudo docker-compose up --build -d
+            docker pull donskihalexey/yamdb_finallatest
+            docker-compose down -v
+            docker image prune -f
+            docker-compose up -d
+
   send_message:
     runs-on: ubuntu-latest
     needs: deploy
