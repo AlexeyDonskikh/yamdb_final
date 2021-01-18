@@ -54,7 +54,7 @@ jobs:
           username: ${{ secrets.USER }}
           key: ${{ secrets.SSH_KEY }}
           script: |
-            docker pull donskihalexey/yamdb_finallatest
+            docker pull donskihalexey/yamdb_final:latest
             docker-compose down -v
             docker image prune -f
             docker-compose up -d
