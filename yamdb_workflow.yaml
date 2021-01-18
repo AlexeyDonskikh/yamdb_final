@@ -54,10 +54,10 @@ jobs:
           username: ${{ secrets.USER }}
           key: ${{ secrets.SSH_KEY }}
           script: |
-            docker pull donskihalexey/yamdb_final:latest
-            docker-compose down -v
-            docker image prune -f
-            docker-compose up -d
+            sudo docker pull donskihalexey/yamdb_final:latest
+            sudo docker-compose down -v
+            sudo docker image prune -f
+            sudo docker-compose up -d
 
   send_message:
     runs-on: ubuntu-latest
