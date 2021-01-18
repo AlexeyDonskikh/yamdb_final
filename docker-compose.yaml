@@ -15,7 +15,7 @@ services:
     image: donskihalexey/yamdb_final:latest
     restart: always
     volumes:
-      - static:/static
+      - static_volume:/code/static/
     ports:
       - "8000:8000"
     depends_on:
